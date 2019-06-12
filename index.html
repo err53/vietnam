@@ -20,7 +20,7 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">Le Vietnam</a></h1>
+        <h1><a href="#banner">Le Vietnam</a></h1>
         <!-- <nav>
 							<a href="#menu">Menu</a>
 						</nav> -->
@@ -288,5 +288,16 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      $(document).on("click", 'a[href^="#"]', function(event) {
+        event.preventDefault();
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top
+          },
+          500
+        );
+      });
+    </script>
   </body>
 </html>
