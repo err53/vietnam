@@ -5,6 +5,7 @@ var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var sass = require("gulp-sass");
 var uglify = require("gulp-uglify");
+const gulpNewer = require("gulp-newer");
 
 
 // Gulp task to minify CSS files
@@ -66,6 +67,7 @@ gulp.task("images", function(done) {
       // Use configuration
       .pipe(
         $.responsive(config, {
+          width: 1024,
           errorOnEnlargement: false,
           quality: 50,
           withMetadata: false,
@@ -93,7 +95,7 @@ gulp.task("fonts", function(done) {
 });
 
 // Clean output directory
-gulp.task("clean", () => del(["dist"]));
+gulp.task("clean", () => del(["docs"]));
 
 
 exports.default = gulp.series("clean", "scripts", "styles", "pages", "cssimages", "fonts", "images");
