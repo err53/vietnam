@@ -67,7 +67,7 @@ gulp.task("images", function(done) {
       .pipe(
         $.responsive(config, {
           errorOnEnlargement: false,
-          quality: 80,
+          quality: 50,
           withMetadata: false,
           compressionLevel: 7,
           max: true
