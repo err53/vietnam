@@ -66,9 +66,8 @@ gulp.task("images", function(done) {
       // Use configuration
       .pipe(
         $.responsive(config, {
-          width: 1024,
           errorOnEnlargement: false,
-          quality: 50,
+          quality: 80,
           withMetadata: false,
           compressionLevel: 7,
           max: true
