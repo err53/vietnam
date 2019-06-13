@@ -7,12 +7,11 @@ var sass = require("gulp-sass");
 var uglify = require("gulp-uglify");
 const gulpNewer = require("gulp-newer");
 
-
 // Gulp task to minify CSS files
 gulp.task("styles", function(done) {
   return (
     gulp
-      .src("./assets/sass/*.scss")
+      .src(["./assets/sass/*.scss", "./assets/css/fontawesome-all.min.css"])
       // Compile SASS files
       .pipe(
         sass({
@@ -97,5 +96,12 @@ gulp.task("fonts", function(done) {
 // Clean output directory
 gulp.task("clean", () => del(["docs"]));
 
-
-exports.default = gulp.series("clean", "scripts", "styles", "pages", "cssimages", "fonts", "images");
+exports.default = gulp.series(
+  "clean",
+  "scripts",
+  "styles",
+  "pages",
+  "cssimages",
+  "fonts",
+  "images"
+);
