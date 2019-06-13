@@ -1,0 +1,33 @@
+{
+  "name": "vietnam",
+  "version": "1.0.0",
+  "description": "This is a culminating project for FSF2D9-C for the 2018-2019 school year.\r Before using this, keep plagarism in mind! Academic dishonesty is serious business!",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-responsive": "^2.14.0",
+    "gulp-responsive-config": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhthenerd/vietnam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhthenerd/vietnam/issues"
+  },
+  "homepage": "https://github.com/jhthenerd/vietnam#readme"
+}
