@@ -1,6 +1,6 @@
 # Le Vietnam
 
-Cela est un projet culminant pour FSF2D9-C pour l'année scolaire 2018-2019.
+C'est un projet culminant pour FSF2D9-C pour l'année scolaire 2018-2019.
 
 Avant d'utiliser ceci, gardez à l'esprit le plagiat !
 La malhonnêteté académique est une affaire sérieuse !
